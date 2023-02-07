@@ -9,25 +9,30 @@ div
 mod
 or
 and
-not
 then
 else
 of
 end
-until
 do
 array
 file
-program
-const
 var
 type
-procedure
-begin
 if
 case
 while
-repeat
+% Removed the old PT keywords: not until program const procedure begin repeat
+% Added the new Quby keywords: using val def break when module unless elsif
+using 
+val
+def
+break
+when
+module
+unless
+elsif
+%end of new QUBY identifiers
+
 
 % End of keywords
 
@@ -35,9 +40,9 @@ repeat
 %   These must be in the exact same order as the PredeclaredId 
 %   type definition in semantic.ssl.  
 
-% Predeclared type names
+% Predeclared type names: Replaced char with QUBY String
 integer
-char
+String
 boolean
 text
 
